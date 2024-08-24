@@ -1,0 +1,88 @@
+<style>
+    #mainmenu input[type="radio"] {
+      display: none;
+    }
+    
+    #mainmenu label {
+      display: inline-block;
+      padding: 10px;
+      background-color: #fff;
+    }
+    
+    #mainmenu input[type="radio"]:checked + label {
+      background-color: green;
+    }
+    
+    #mainmenu input[type="radio"]:checked + label:first-of-type {
+      background-color: pink;
+    }
+    
+    .TourMenu{
+        margin-top: 36px;
+        font-size: 23px;
+        line-height: 122%;
+        height:28px;
+        margin-bottom: 30px;
+        color:#1B1F2B;
+    }
+    .TourMenu__width{
+        display:  flex;
+        flex-wrap: wrap;
+        width:702px;
+        list-style-type: none;
+        margin-left: -40px;
+    }
+    
+    .TourMenu__left{
+        margin-left: 30px; 
+    }
+    .TourMenu__second-row-left{
+        margin-left: 32px; 
+    }
+    .TourMenu__right{
+        color:#1B1F2B;   
+    }
+    .TourMenu__right:hover{
+        text-decoration:underline;
+        cursor: pointer;    
+    }
+    
+    
+    .TourMenu__right:focus, .TourMenu__right:active {
+        text-decoration:underline;
+        color:#EFA501;
+    }
+    
+     li:checked +  .active:first-of-type {
+      background-color: pink;
+    }
+    
+    
+    </style>
+    <div  class = "box TourMenu " id="mainmenu">
+      <div class = "TourMenu__width">
+      <input type="radio" name="menuitem" id="item1" checked>
+      <label for="item1">Популярные</label>
+         <input type="radio" name="menuitem" id="item2">
+      <label for="item2">Авторские </label>
+      <input type="radio" name="menuitem" id="item3">
+      <label for="item3">Походы</label>
+      <input type="radio" name="menuitem" id="item4">
+      <label for="item4"> Сплавы</label>
+       <input type="radio" name="menuitem" id="item5">
+      <label for="item5">Велопрогулки</label>
+      
+        </div>
+    </div>
+    
+    <div class = "box TourMenu ">
+                    <ul class = "TourMenu__width">
+                            <li><a class="TourMenu__right active"  href = "#">Популярные</a></li>
+                            <li><a class="TourMenu__left TourMenu__right"  href = "#Choose-a-tour">Авторские</a></li>
+                            <li class="TourMenu__left TourMenu__right"> Походы </li>
+                            <li class="TourMenu__second-row-left TourMenu__right"> Сплавы </li>
+                            <li class="TourMenu__left TourMenu__second-row-top TourMenu__right"> Велопрогулки </li>
+                    </ul>                
+                </div>
+    
+    
