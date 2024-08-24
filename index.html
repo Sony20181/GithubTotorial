@@ -13,39 +13,4 @@
   </label>
   
   
-  <style>
-    .custom-radio span {
-     display:flex;
-    position:relative;
-    }
-   .custom-radio input[type = "radio"]{
-    position:absolute;
-    width:1px;
-    height:1px;
-    opacity:0;
-    }
-    .custom-radio span::before{
-    content : "";
-    width:15px;
-    height:15px;
-    border: 2px solid black;
-    display:inline-block;
-    margin-right:10px;
-    border-radius:100%;
-    }
-    .custom-radio span::after{
-    content : "";
-    position:absolute;
-    left:0px;
-    top:0;
-    width:5px;
-    height:5px;
-    background-color:red;
-    border-radius:100%;
-    transform: translateX(50%);
-     opacity:0;
-    }
-    .custom-radio input[type = "radio"]:checked + span::after {
-    opacity:1;
-    }
-  </style>
+  
