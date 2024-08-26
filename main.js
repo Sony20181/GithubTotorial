@@ -4,3 +4,7 @@ function hello(){
 function work(){
     alert("work")
 }
+
+function NUMER(){
+    alert("NIMBJHJH")
+}
